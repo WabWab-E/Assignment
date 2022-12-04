@@ -2,7 +2,7 @@
 
 ## 아두이노 코드
 
-```arduino
+```ino
 void setup(){
     Serial.begin(9600);
     pinMode(13, OUTPUT);
@@ -18,8 +18,8 @@ void setup(){
     return t;
     }
 
-    int dly;
-    void loop(){
+int dly;
+void loop(){
     int a=analogRead(A0);
     Serial.println(th(a));
 
