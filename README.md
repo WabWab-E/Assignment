@@ -2,13 +2,13 @@
 
 ## 아두이노 코드
 
-```arduino
+```ino
 void setup(){
     Serial.begin(9600);
     pinMode(13, OUTPUT);
     }
 
-    double th(int v) {
+double th(int v) {
     double t;
 
     t = log(((10240000/v) - 10000));
@@ -16,10 +16,10 @@ void setup(){
     t = t - 273.15;
 
     return t;
-    }
+}
 
-    int dly;
-    void loop(){
+int dly;
+void loop(){
     int a=analogRead(A0);
     Serial.println(th(a));
 
